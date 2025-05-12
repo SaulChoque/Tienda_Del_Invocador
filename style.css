@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.card {
+    background-color: #ffffff; 
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    margin: 15px; 
+}
+
+.card-body:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.card .btn {
+    background-color: #ffc107;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+    background-color: #e0a800;
+}
+.product-quantity {
+    color: #fff; 
+    font-weight: bold; 
+    margin-left: 5px; 
+}
+.product-quantity::before {
+    content: "x"; 
+    color: #fff; 
+    margin-right: 2px; 
+}
+
+.product-total-price {
+    margin-left: 20px;
+    font-size: 16px;
+    color: #ffc107;
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+
+.dropdown-item img {
+    border: 1px solid #ffc107;
+    margin-right: 10px;
+}
+
+.dropdown-menu {
+    background-color: #000;
+    border: 1px solid #ffc107;
+}
+
+.dropdown-header {
+    color: #ffc107;
+}
+
+.dropdown-divider {
+    border-color: #ffc107;
+}
+.navbar a{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.carousel-item{
+    min-height: 400px;
+}
+
+.carousel-caption{
+    bottom: 220px;
+    z-index: 2;
+}
+
+.carousel-caption h5{
+    font-size: 70px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+
+.carousel-caption p{
+    width: 60%;
+    margin: 10px auto;
+    font-size: 18px;
+}
+
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.services{
+    padding: 80px 0;
+}
+
+.bg-car1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)),url(img/productos-ventas-online.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-car2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)),url(img/48C2D2E9-6C5A-4A7D-BB07-719AB479D521.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-car3{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)),url(img/15822734764207.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box-icons i{
+    font-size: 40px;
+}
+
+.box-icons h3{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.product{
+    padding: 80px 0;
+}
+
+.row img{
+    width: 150px;
+    height: 150px;
+}
+
+.banner{
+    padding: 50px 0;
+    margin-bottom: 80px;
+    background-color: black !important;
+}
+
+.banner h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.banner video{
+    width: 300px;
+}
+
+@media(max-width: 767px){
+    .carousel-item{
+        min-height: 500px;
+    }
+
+    .carousel-item img{
+        height: 500px;
+    }
+
+    .carousel-caption{
+        bottom: 30px;
+    }
+
+    .carousel-caption h5{
+        font-size: 50px;
+        margin-top: 0;
+    }
+
+    .carousel-caption p{
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .services{
+        padding: 30px 0;
+    }
+
+    .products{
+        padding: 30px 0 0 0;
+    }
+
+    .banner{
+        margin-bottom: 30px;
+    }
+
+}
